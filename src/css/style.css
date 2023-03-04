@@ -29,10 +29,30 @@ body {
     background-size:cover;
 }
 
+.card header .nft-img .cover-box {
+    width: 100%;
+    height: 100%;
 
-.card header img:hover {
     background-color: var(--cyan);
+    border-radius: 8px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    opacity: 0;
+    transition: .5s;
+}
+
+.card header .nft-img .cover-box:hover {
+    opacity: .5;
+}
+
+.card main a h2 {
+    color: #fff;
+    text-decoration: none;
+    transition: .2s;
 }
 
 .card main h2:hover {
@@ -95,3 +115,12 @@ body {
     border: 1px solid white;
     border-radius: 50%;
 }   
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+    
+.attribution a { 
+    color: var(--cyan);
+}
